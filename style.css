@@ -1,0 +1,213 @@
+/* Reset básico */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Fonte e cores gerais */
+
+body{
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    background-color: #f8f5f0;
+    color:#050308;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-image: url('imagens/fundo-pergaminho.png'); /* uma textura suave tipo pergaminho */
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center center;
+      
+}
+
+/* Imagens */
+.imagem-container {
+    text-align: center;
+    margin: 20px auto;
+}
+.imagem-topo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #8c3a28;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-container figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+}
+
+
+/* Cabeçalho */
+
+header{
+text-align: center;
+padding: 40px 20px;
+background-color: #13240c;
+color: #f8f5f0;
+border-bottom: 4px solid #552424;
+}
+
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Seções */
+
+section{
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 800px;
+    border-left: 4px solid #552424;
+    background-color: #ffffff;
+    box-shadow: rgba(134, 48, 48, 0.295);
+}
+
+section h2{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color:darkolivegreen;
+}
+
+section p,
+section li{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Lista de reflexões */
+
+#reflexoes ul{
+    list-style-type: none;
+}
+
+#reflexoes li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#reflexoes li::before {
+    content: "❖";
+    position: absolute;
+    left: 0;
+    color: #b60000;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: rgba(12, 7, 7, 0.582);
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+/* Botões */
+
+.botao-biografia {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #8c3a28;
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.botao-reflexoes {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #8c3a28;
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-pinturas {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #8c3a28;
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-home {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 20px;
+    background-color: #8c3a28;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-gome:hover {
+    background-color: #63291e;
+}
+
+
+/* Responsividade */
+
+
+@media (max-width: 768px){
+    body {
+        padding: 10px;
+    }
+
+ header h1{
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+section {
+    padding:20px;
+    margin: 40px 0;
+}
+
+section h2 {
+    font-size: 1.5rem;
+}
+
+section p,
+section li {
+    font-size: 1 rem;
+}
+
+footer {
+    font-size: 0.08rem;
+}
+}
